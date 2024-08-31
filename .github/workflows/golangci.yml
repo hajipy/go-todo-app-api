@@ -3,7 +3,7 @@ on:
   pull_request:
     paths:
       - "**.go"
-      - .github/workflows/golangi.yml
+      - .github/workflows/golangci.yml
 jobs:
   golangci-lint:
     runs-on: ubuntu-latest
