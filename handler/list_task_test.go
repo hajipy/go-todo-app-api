@@ -1,12 +1,13 @@
 package handler
 
 import (
-	"github.com/hajipy/go_todo_app/entity"
-	"github.com/hajipy/go_todo_app/store"
-	"github.com/hajipy/go_todo_app/testutil"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/hajipy/go_todo_app/entity"
+	"github.com/hajipy/go_todo_app/store"
+	"github.com/hajipy/go_todo_app/testutil"
 )
 
 func TestListTask(t *testing.T) {

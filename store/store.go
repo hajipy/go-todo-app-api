@@ -2,6 +2,7 @@ package store
 
 import (
 	"errors"
+
 	"github.com/hajipy/go_todo_app/entity"
 )
 

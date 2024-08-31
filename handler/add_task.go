@@ -2,11 +2,11 @@ package handler
 
 import (
 	"encoding/json"
-	"github.com/hajipy/go_todo_app/entity"
 	"net/http"
 	"time"
 
 	"github.com/go-playground/validator/v10"
+	"github.com/hajipy/go_todo_app/entity"
 	"github.com/hajipy/go_todo_app/store"
 )
 
