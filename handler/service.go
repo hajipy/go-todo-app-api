@@ -6,7 +6,7 @@ import (
 	"github.com/hajipy/go_todo_app/entity"
 )
 
-//go:generate go run github.com/matryer/moq -out moq_test.go . AddTaskService ListTasksService RegisterUserService
+//go:generate go run github.com/matryer/moq -out moq_test.go . AddTaskService ListTasksService RegisterUserService LoginService
 type AddTaskService interface {
 	AddTask(ctx context.Context, title string) (*entity.Task, error)
 }
@@ -17,4 +17,8 @@ type ListTasksService interface {
 
 type RegisterUserService interface {
 	RegisterUser(ctx context.Context, name, password, role string) (*entity.User, error)
+}
+
+type LoginService interface {
+	Login(ctx context.Context, name, password string) (string, error)
 }
