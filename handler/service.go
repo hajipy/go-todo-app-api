@@ -12,5 +12,5 @@ type AddTaskService interface {
 }
 
 type ListTasksService interface {
-	ListTask(ctx context.Context) (entity.Tasks, error)
+	ListTasks(ctx context.Context) (entity.Tasks, error)
 }
