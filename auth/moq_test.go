@@ -5,7 +5,7 @@ package auth
 
 import (
 	"context"
-	"github.com/hajipy/go_todo_app/entity"
+	"github.com/hajipy/go-todo-app-api/entity"
 	"sync"
 )
 

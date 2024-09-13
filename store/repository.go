@@ -8,8 +8,8 @@ import (
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/hajipy/go_todo_app/clock"
-	"github.com/hajipy/go_todo_app/config"
+	"github.com/hajipy/go-todo-app-api/clock"
+	"github.com/hajipy/go-todo-app-api/config"
 	"github.com/jmoiron/sqlx"
 )
 

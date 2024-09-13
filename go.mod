@@ -1,4 +1,4 @@
-module github.com/hajipy/go_todo_app
+module github.com/hajipy/go-todo-app-api
 
 go 1.23.0
 

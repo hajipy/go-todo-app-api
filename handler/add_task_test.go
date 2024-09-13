@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/hajipy/go_todo_app/entity"
-	"github.com/hajipy/go_todo_app/testutil"
+	"github.com/hajipy/go-todo-app-api/entity"
+	"github.com/hajipy/go-todo-app-api/testutil"
 )
 
 func TestAddTask(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/hajipy/go_todo_app/clock"
-	"github.com/hajipy/go_todo_app/entity"
+	"github.com/hajipy/go-todo-app-api/clock"
+	"github.com/hajipy/go-todo-app-api/entity"
 	"github.com/lestrrat-go/jwx/v2/jwa"
 	"github.com/lestrrat-go/jwx/v2/jwk"
 	"github.com/lestrrat-go/jwx/v2/jwt"
@@ -67,7 +67,7 @@ const (
 func (j *JWTer) GenerateToken(ctx context.Context, u entity.User) ([]byte, error) {
 	tok, err := jwt.NewBuilder().
 		JwtID(uuid.New().String()).
-		Issuer("github.com/hajipy/go_todo_app").
+		Issuer("github.com/hajipy/go-todo-app-api").
 		Subject("access_token").
 		IssuedAt(j.Clocker.Now()).
 		Expiration(j.Clocker.Now().Add(30*time.Minute)).

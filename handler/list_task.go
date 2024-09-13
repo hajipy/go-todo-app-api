@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/hajipy/go_todo_app/entity"
+	"github.com/hajipy/go-todo-app-api/entity"
 )
 
 type ListTask struct {

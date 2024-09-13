@@ -7,7 +7,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/hajipy/go_todo_app/config"
+	"github.com/hajipy/go-todo-app-api/config"
 )
 
 func run(ctx context.Context) error {

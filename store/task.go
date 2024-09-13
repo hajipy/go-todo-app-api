@@ -3,7 +3,7 @@ package store
 import (
 	"context"
 
-	"github.com/hajipy/go_todo_app/entity"
+	"github.com/hajipy/go-todo-app-api/entity"
 )
 
 func (r *Repository) AddTask(ctx context.Context, db Execer, t *entity.Task) error {

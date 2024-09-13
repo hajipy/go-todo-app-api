@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/hajipy/go_todo_app/testutil"
+	"github.com/hajipy/go-todo-app-api/testutil"
 )
 
 func TestLogin_ServeHTTP(t *testing.T) {

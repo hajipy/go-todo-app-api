@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/hajipy/go_todo_app/auth"
+	"github.com/hajipy/go-todo-app-api/auth"
 )
 
 func AuthMiddleware(j *auth.JWTer) func(next http.Handler) http.Handler {
