@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"github.com/hajipy/go_todo_app/entity"
-	"github.com/hajipy/go_todo_app/store"
+	"github.com/hajipy/go-todo-app-api/entity"
+	"github.com/hajipy/go-todo-app-api/store"
 )
 
 //go:generate go run github.com/matryer/moq -out moq_test.go . TaskAdder TaskLister UserRegister UserGetter TokenGenerator

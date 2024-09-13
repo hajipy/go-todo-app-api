@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/hajipy/go_todo_app/entity"
+	"github.com/hajipy/go-todo-app-api/entity"
 )
 
 type AddTask struct {

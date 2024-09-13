@@ -6,10 +6,10 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/google/go-cmp/cmp"
-	"github.com/hajipy/go_todo_app/clock"
-	"github.com/hajipy/go_todo_app/entity"
-	"github.com/hajipy/go_todo_app/testutil"
-	"github.com/hajipy/go_todo_app/testutil/fixture"
+	"github.com/hajipy/go-todo-app-api/clock"
+	"github.com/hajipy/go-todo-app-api/entity"
+	"github.com/hajipy/go-todo-app-api/testutil"
+	"github.com/hajipy/go-todo-app-api/testutil/fixture"
 	"github.com/jmoiron/sqlx"
 )
 

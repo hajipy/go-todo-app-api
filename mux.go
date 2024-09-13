@@ -6,12 +6,12 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-playground/validator/v10"
-	"github.com/hajipy/go_todo_app/auth"
-	"github.com/hajipy/go_todo_app/clock"
-	"github.com/hajipy/go_todo_app/config"
-	"github.com/hajipy/go_todo_app/handler"
-	"github.com/hajipy/go_todo_app/service"
-	"github.com/hajipy/go_todo_app/store"
+	"github.com/hajipy/go-todo-app-api/auth"
+	"github.com/hajipy/go-todo-app-api/clock"
+	"github.com/hajipy/go-todo-app-api/config"
+	"github.com/hajipy/go-todo-app-api/handler"
+	"github.com/hajipy/go-todo-app-api/service"
+	"github.com/hajipy/go-todo-app-api/store"
 )
 
 func NewMux(ctx context.Context, cfg *config.Config) (http.Handler, func(), error) {

@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/hajipy/go_todo_app/config"
-	"github.com/hajipy/go_todo_app/entity"
+	"github.com/hajipy/go-todo-app-api/config"
+	"github.com/hajipy/go-todo-app-api/entity"
 )
 
 type KVS struct {

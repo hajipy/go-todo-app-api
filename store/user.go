@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/go-sql-driver/mysql"
-	"github.com/hajipy/go_todo_app/entity"
+	"github.com/hajipy/go-todo-app-api/entity"
 )
 
 func (r *Repository) RegisterUser(ctx context.Context, db Execer, u *entity.User) error {

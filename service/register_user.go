@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hajipy/go_todo_app/entity"
-	"github.com/hajipy/go_todo_app/store"
+	"github.com/hajipy/go-todo-app-api/entity"
+	"github.com/hajipy/go-todo-app-api/store"
 	"golang.org/x/crypto/bcrypt"
 )
 

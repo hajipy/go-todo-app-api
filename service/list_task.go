@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hajipy/go_todo_app/auth"
-	"github.com/hajipy/go_todo_app/entity"
-	"github.com/hajipy/go_todo_app/store"
+	"github.com/hajipy/go-todo-app-api/auth"
+	"github.com/hajipy/go-todo-app-api/entity"
+	"github.com/hajipy/go-todo-app-api/store"
 )
 
 type ListTask struct {

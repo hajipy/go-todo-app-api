@@ -11,10 +11,10 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/hajipy/go_todo_app/clock"
-	"github.com/hajipy/go_todo_app/entity"
-	"github.com/hajipy/go_todo_app/store"
-	"github.com/hajipy/go_todo_app/testutil/fixture"
+	"github.com/hajipy/go-todo-app-api/clock"
+	"github.com/hajipy/go-todo-app-api/entity"
+	"github.com/hajipy/go-todo-app-api/store"
+	"github.com/hajipy/go-todo-app-api/testutil/fixture"
 	"github.com/lestrrat-go/jwx/v2/jwa"
 	"github.com/lestrrat-go/jwx/v2/jwk"
 	"github.com/lestrrat-go/jwx/v2/jwt"
@@ -61,7 +61,7 @@ func TestJWTer_GetToken(t *testing.T) {
 	c := clock.FixedClocker{}
 	want, err := jwt.NewBuilder().
 		JwtID(uuid.New().String()).
-		Issuer("github.com/hajipy/go_todo_app").
+		Issuer("github.com/hajipy/go-todo-app-api").
 		Subject("access_token").
 		IssuedAt(c.Now()).
 		Expiration(c.Now().Add(30*time.Minute)).
@@ -114,7 +114,7 @@ func TestJWTer_GetToken_NG(t *testing.T) {
 	c := clock.FixedClocker{}
 	want, err := jwt.NewBuilder().
 		JwtID(uuid.New().String()).
-		Issuer("github.com/hajipy/go_todo_app").
+		Issuer("github.com/hajipy/go-todo-app-api").
 		Subject("access_token").
 		IssuedAt(c.Now()).
 		Expiration(c.Now().Add(30*time.Minute)).
